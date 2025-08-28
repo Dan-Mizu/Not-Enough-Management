@@ -1,6 +1,8 @@
 # Not Enough (Server) Management
 *Extend and enhance Minecraft's built-in Server Management Protocol (JSON-RPC over WebSocket)*.
 
+[![Modrinth](https://img.shields.io/modrinth/dt/not-enough-management?style=flat-square&label=&color=00AF5C&logo=modrinth&logoColor=white)](https://modrinth.com/mod/not-enough-management)
+
 A server-side Fabric Mod for Minecraft [25w35a](https://www.minecraft.net/en-us/article/minecraft-snapshot-25w35a) / 1.21.9+.
 The **Minecraft Server Management Protocol** provides an API over websocket that allows you to get live updates, change values, and request information from/to a Minecraft server without much hassle.
 Communication is done both-ways with JSON objects.

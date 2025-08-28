@@ -3,10 +3,16 @@
   "id": "not-enough-management",
   "version": "${version}",
 
-  "name": "not-enough-management",
-  "description": "Not Enough (Server) Management",
-  "authors": [],
-  "contact": {},
+  "name": "Not Enough Management",
+  "description": "Extends and enhances Minecraft's built-in Server Management Protocol (JSON-RPC over WebSocket).",
+  "authors": ["DanMizu"],
+  "contact": {
+    "issues": "https://github.com/Dan-Mizu/Not-Enough-Management/issues",
+    "sources": "https://github.com/Dan-Mizu/Not-Enough-Management",
+    "discord": "https://discord.gg/xxybrgF",
+    "donate": "https://paypal.me/DanMizu",
+    "modrinth": "https://modrinth.com/project/not-enough-management"
+  },
 
   "license": "GPL-3.0",
   "icon": "assets/not-enough-management/icon.png",
