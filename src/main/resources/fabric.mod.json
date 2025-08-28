@@ -13,16 +13,11 @@
 
   "environment": "server",
   "entrypoints": {
-    "fabric-datagen": ["dev.danmizu.not_enough_management.client.NotEnoughManagementDataGenerator"],
     "main": ["dev.danmizu.not_enough_management.NotEnoughManagement"]
   },
 
   "mixins": [
     "not-enough-management.mixins.json"
-    ,{
-      "config": "not-enough-management.client.mixins.json",
-      "environment": "client"
-    }
   ],
 
   "depends": {
