@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.danmizu.not_enough_management.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ManagementServerAccessor",
+    "MinecraftDedicatedServerAccessor",
+    "MinecraftDedicatedServerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

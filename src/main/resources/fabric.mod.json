@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "not-enough-management",
+  "version": "${version}",
+
+  "name": "not-enough-management",
+  "description": "Not Enough (Server) Management",
+  "authors": [],
+  "contact": {},
+
+  "license": "GPL-3.0",
+  "icon": "assets/not-enough-management/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "fabric-datagen": ["dev.danmizu.not_enough_management.client.NotEnoughManagementDataGenerator"],
+    "main": ["dev.danmizu.not_enough_management.NotEnoughManagement"]
+  },
+
+  "mixins": [
+    "not-enough-management.mixins.json"
+    ,{
+      "config": "not-enough-management.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=1.21.9-alpha.25.35.a"
+  }
+}
