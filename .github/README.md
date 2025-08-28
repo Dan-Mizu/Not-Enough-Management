@@ -47,8 +47,8 @@ Communication is done both-ways with JSON objects.
 > There is no authentication built into the management server and anyone that can connect essentially has full control over your server.
 > You're recommended to run services that use it on the same machine and keep `management-server-host` set to `localhost`.
 
-2. Download both *this* mod for your minecraft server version and the [Fabric API](https://modrinth.com/mod/fabric-api/versions).
-3. Add both mods into your `mods` folder in your server, and start/restart.
+2. Download this mod, making sure to match it to the minecraft version of your fabric server.
+3. Add the downloaded `.jar` file of this mod into your `mods` folder in your server, and start/restart.
 
 ## ▶️ Usage
 

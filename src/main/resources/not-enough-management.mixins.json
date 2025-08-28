@@ -4,9 +4,11 @@
   "package": "dev.danmizu.not_enough_management.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "ChatMessageMixin",
     "ManagementServerAccessor",
     "MinecraftDedicatedServerAccessor",
-    "MinecraftDedicatedServerMixin"
+    "MinecraftServerMixin",
+    "OutgoingNotificationRpcMethodsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

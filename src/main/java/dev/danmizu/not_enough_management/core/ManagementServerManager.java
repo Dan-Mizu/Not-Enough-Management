@@ -1,12 +1,13 @@
 package dev.danmizu.not_enough_management.core;
 
-import dev.danmizu.not_enough_management.NotEnoughManagement;
-import dev.danmizu.not_enough_management.mixin.ManagementServerAccessor;
-import dev.danmizu.not_enough_management.mixin.MinecraftDedicatedServerAccessor;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.dedicated.MinecraftDedicatedServer;
 import net.minecraft.server.dedicated.management.ManagementServer;
 import net.minecraft.server.dedicated.management.OutgoingRpcMethod;
+
+import dev.danmizu.not_enough_management.NotEnoughManagement;
+import dev.danmizu.not_enough_management.mixin.ManagementServerAccessor;
+import dev.danmizu.not_enough_management.mixin.MinecraftDedicatedServerAccessor;
 
 public class ManagementServerManager {
     private static ManagementServer managementServer;
