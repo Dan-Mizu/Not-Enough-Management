@@ -18,7 +18,5 @@ public class NotEnoughManagement implements ModInitializer {
 
         // store reference to management server when server starts
         ServerLifecycleEvents.SERVER_STARTED.register(ManagementServerManager::init);
-
-        LOGGER.info("[NEM] Initialized!");
     }
 }

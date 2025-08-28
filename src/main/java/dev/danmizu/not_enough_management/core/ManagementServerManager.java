@@ -1,5 +1,6 @@
 package dev.danmizu.not_enough_management.core;
 
+import dev.danmizu.not_enough_management.NotEnoughManagement;
 import dev.danmizu.not_enough_management.mixin.ManagementServerAccessor;
 import dev.danmizu.not_enough_management.mixin.MinecraftDedicatedServerAccessor;
 import net.minecraft.server.MinecraftServer;
@@ -14,6 +15,8 @@ public class ManagementServerManager {
         // get management server from dedicated server
         if (server instanceof MinecraftDedicatedServer dedicatedServer) {
             managementServer = ((MinecraftDedicatedServerAccessor) dedicatedServer).nem$getManagementServer();
+
+            NotEnoughManagement.LOGGER.info("NEM has hooked into the Management Server. Enjoy the extra features! -DanMizu");
         }
     }
 
