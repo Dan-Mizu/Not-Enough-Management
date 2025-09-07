@@ -8,7 +8,7 @@
     "ManagementServerAccessor",
     "MinecraftDedicatedServerAccessor",
     "MinecraftServerMixin",
-    "OutgoingNotificationRpcMethodsMixin"
+    "OutgoingRpcMethodsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

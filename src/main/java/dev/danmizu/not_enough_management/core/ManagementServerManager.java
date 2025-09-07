@@ -38,7 +38,7 @@ public class ManagementServerManager {
      * @param <T> payload type
      */
     public static <T> void broadcastNotificationToAll(
-            OutgoingRpcMethod.NotificationRpcMethod<T> method,
+            OutgoingRpcMethod.Notification<T> method,
             T payload
     ) {
         // haven't gotten management server reference yet (shouldn't happen)

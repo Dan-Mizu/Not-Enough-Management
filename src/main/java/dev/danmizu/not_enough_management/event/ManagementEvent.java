@@ -21,6 +21,6 @@ public interface ManagementEvent<T> {
      * @return the outgoing json-rpc method for this event
      */
     @SuppressWarnings("unused")
-    OutgoingRpcMethod.NotificationRpcMethod<T> getRpcMethod();
+    OutgoingRpcMethod.Notification<T> getRpcMethod();
 
 }

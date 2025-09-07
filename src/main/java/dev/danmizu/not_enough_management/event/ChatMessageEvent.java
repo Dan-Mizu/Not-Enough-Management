@@ -31,19 +31,18 @@ public class ChatMessageEvent implements ManagementEvent<ChatMessageEvent.Payloa
     }
 
     // json-rpc method registered once
-    private static final OutgoingRpcMethod.NotificationRpcMethod<Payload> RPC_METHOD =
-            OutgoingRpcMethod.createNotificationMethod(CODEC)
+    private static final OutgoingRpcMethod.Notification<Payload> RPC_METHOD =
+            OutgoingRpcMethod.createNotificationBuilder(CODEC)
                     .description("Chat message from player")
-                    .register("notification", "chat_message"); // <-- only once
+                    .buildAndRegister("notification", "chat_message"); // <-- replaces .register()
 
     @Override
-    public OutgoingRpcMethod.NotificationRpcMethod<Payload> getRpcMethod() {
+    public OutgoingRpcMethod.Notification<Payload> getRpcMethod() {
         return RPC_METHOD;
     }
 
     // called when a chat message is sent
     public static void handleMessage(String msg, ServerPlayerEntity sender) {
-        // send chat message notification to clients connected to management server
         ManagementServerManager.broadcastNotificationToAll(
                 RPC_METHOD,
                 new Payload(sender.getUuid(), sender.getName().getString(), msg)
